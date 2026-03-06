@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa de Logística – E-Commerce | Edgar & Vitor</title>
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2c5282;
+      --accent: #ed8936;
+      --bg: #f7fafc;
+      --card: #fff;
+      --text: #2d3748;
+      --muted: #718096;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 0 1rem 3rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 2rem;
+      margin: 0 -1rem 2rem;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 14px rgba(26, 54, 93, 0.25);
+    }
+    header h1 { margin: 0 0 0.5rem; font-size: 1.75rem; }
+    header p { margin: 0; opacity: 0.9; font-size: 1rem; }
+    .authors { font-size: 0.95rem; margin-top: 0.75rem; opacity: 0.95; }
+    h2 {
+      color: var(--primary);
+      font-size: 1.35rem;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 2px solid var(--accent);
+    }
+    h3 { color: var(--secondary); font-size: 1.1rem; margin: 1.25rem 0 0.5rem; }
+    section, .card {
+      background: var(--card);
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      margin-bottom: 1rem;
+    }
+    ul { padding-left: 1.25rem; margin: 0.5rem 0; }
+    li { margin: 0.25rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+    }
+    tr:nth-child(even) { background: #f8fafc; }
+    .total-row { font-weight: 700; background: #edf2f7 !important; }
+    .total-row td { border-top: 2px solid var(--primary); padding-top: 0.75rem; }
+    .phase-num {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      line-height: 28px;
+      border-radius: 50%;
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+    .cost { white-space: nowrap; text-align: right; }
+    .note { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
+    .extra { border-left: 4px solid var(--accent); padding-left: 1rem; margin: 1rem 0; }
+    .source-md { font-size: 0.85rem; color: var(--muted); margin-top: 2rem; }
+    footer { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Empresa de Logística – E-Commerce</h1>
+    <p>Plano de abertura em etapas lógicas com estimativa de custos</p>
+    <p class="authors">Edgar Hideki Shiraishi · Vitor Hugo do Nascimento</p>
+    <p class="extra" style="margin: 1rem 0 0; border: 0; padding: 0;"><strong>Modelo de negócio:</strong> Sem frota própria — operação apenas com veículos de terceiros (motoristas parceiros/agregados). A receita da empresa é o <strong>valor total da taxa de frete</strong> cobrada ao cliente.</p>
+  </header>
+
+  <section>
+    <h2><span class="phase-num">1</span> Constituição legal e documentação</h2>
+    <p><strong>CNPJ:</strong> ME (Microempresa)</p>
+    <p><strong>Documentação de atividade:</strong> E-Commerce / logística e transporte.</p>
+    <ul>
+      <li>Registro na Junta Comercial</li>
+      <li>Certificado Digital (e-CNPJ)</li>
+      <li>Inscrição Municipal e Alvará (conforme município)</li>
+      <li>Conta bancária jurídica</li>
+    </ul>
+    <p class="extra"><strong>Complemento sugerido:</strong> Definir contrato social, regime tributário (Simples Nacional) e abrir conta PJ assim que o CNPJ estiver ativo.</p>
+  </section>
+
+  <section>
+    <h2><span class="phase-num">2</span> Seguro e gestão de risco</h2>
+    <p><strong>Fornecedores considerados:</strong> Buonny, Brasil Risk.</p>
+    <p>Como não há frota própria, a empresa não contrata seguro por veículo. Foco em:</p>
+    <ul>
+      <li>Seguro de carga (cobertura da mercadoria transportada)</li>
+      <li>RCTR-C ou apólice de responsabilidade civil do transportador (valor da operação / taxa de frete)</li>
+      <li>Avaliação de riscos operacionais e compliance</li>
+    </ul>
+    <p class="extra"><strong>Complemento:</strong> Exigir que motoristas parceiros mantenham documentação e seguro do veículo em dia; revisão anual das apólices da empresa.</p>
+  </section>
+
+  <section>
+    <h2><span class="phase-num">3</span> Cadastro e documentação de motoristas parceiros</h2>
+    <p>Documentação obrigatória por motorista <strong>terceirizado</strong> (veículo dele):</p>
+    <ul>
+      <li>NTT (Registro Nacional de Transportadores)</li>
+      <li>CNH (categoria adequada)</li>
+      <li>Documento do veículo (CRLV)</li>
+      <li>Rastreador instalado e ativo no veículo <em>(responsabilidade do parceiro — ex.: Sascar, Omnilink)</em></li>
+      <li>Conta bancária vinculada à NTT (para repasse do valor do frete)</li>
+    </ul>
+    <p class="extra"><strong>Complemento:</strong> Contrato de prestação de serviço/agregação, checklist de entrega e termo de responsabilidade. A empresa não arca com rastreador nem seguro do veículo do parceiro.</p>
+  </section>
+
+  <section>
+    <h2><span class="phase-num">4</span> Infraestrutura e tecnologia</h2>
+    <h3>Galpão / Centro de distribuição</h3>
+    <ul>
+      <li>Local para recebimento, armazenagem e expedição (próprio ou alugado)</li>
+      <li>Organização de endereçamento e controle de estoque, se houver armazenagem para clientes</li>
+    </ul>
+    <h3>Aplicativo e captação de fretes</h3>
+    <ul>
+      <li><strong>Fretebras</strong> – divulgação de ofertas e captação de cargas</li>
+    </ul>
+    <h3>Rastreamento</h3>
+    <ul>
+      <li>Rastreador (Sascar, Omnilink etc.) é de responsabilidade do <strong>motorista parceiro</strong>, não da empresa.</li>
+      <li>A empresa utiliza sistemas apenas para documentação fiscal e cobrança do <strong>valor total da taxa de frete</strong>.</li>
+    </ul>
+    <h3>Sistema de documentação fiscal</h3>
+    <ul>
+      <li><strong>Bsoft</strong> ou <strong>SSW</strong> – emissão e gestão de documentos fiscais (CT-e, MDF-e, NF-e de serviço, etc.)</li>
+    </ul>
+    <p class="extra"><strong>Complemento:</strong> Computador/notebook para operação, e-mail corporativo e backup dos documentos fiscais.</p>
+  </section>
+
+  <section>
+    <h2><span class="phase-num">5</span> Operação e documentação fiscal</h2>
+    <p>Exigências por tipo de operação:</p>
+    <ul>
+      <li><strong>Mesmo município:</strong> Nota fiscal de serviço (NFS-e)</li>
+      <li><strong>Intermunicipal:</strong> CT-e (Conhecimento de Transporte Eletrônico)</li>
+      <li><strong>Interestadual:</strong> CT-e + MDF-e (Manifesto Eletrônico de Documentos Fiscais)</li>
+    </ul>
+    <p><strong>Fluxo financeiro:</strong> Gerar fatura para recebimento e controlar inadimplência com prazos definidos.</p>
+    <p class="extra"><strong>Complemento:</strong> Política de prazo de pagamento (ex.: 30/60 dias) e conciliação bancária mensal.</p>
+  </section>
+
+  <section>
+    <h2><span class="phase-num">6</span> Atendimento e pós-venda</h2>
+    <p><strong>SAC (Serviço de Atendimento ao Cliente):</strong></p>
+    <ul>
+      <li>Criar um serviço dedicado com pelo menos um funcionário (ou terceirizado)</li>
+      <li>Canal único (telefone/WhatsApp/e-mail) e registro de ocorrências</li>
+    </ul>
+    <p class="extra"><strong>Complemento:</strong> Definir SLA de resposta (ex.: 24h), indicadores de reclamação e feedback para melhorar rotas e entregas.</p>
+  </section>
+
+  <section>
+    <h2><span class="phase-num">7</span> Itens adicionais sugeridos</h2>
+    <ul>
+      <li><strong>Frota:</strong> Apenas veículos de terceiros — sem custo de aquisição, combustível ou manutenção de frota própria. Receita = valor da taxa de frete cobrada ao cliente.</li>
+      <li><strong>Contador:</strong> Contabilidade mensal (obrigatório para ME) – escrituração, impostos, DAS.</li>
+      <li><strong>Marketing e comercial:</strong> Divulgação (Google, redes sociais), site ou landing page e parcerias com e-commerces.</li>
+      <li><strong>Reserva de caixa:</strong> Manter reserva para 3–6 meses de custos fixos antes de depender só da operação.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Estimativa de custos</h2>
+    <p>Valores em reais (R$), referência para planejamento. <strong>Operação apenas com veículos de terceiros</strong> — sem custos de frota própria. Receita = valor total da taxa de frete. Ajuste conforme região e fornecedor.</p>
+    <p class="note" style="margin-bottom: 1rem;"><strong>Ordem sugerida de custos:</strong> documentação e constituição primeiro; infraestrutura física (galpão) por último.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Descrição / Unidade</th>
+          <th class="cost">Custo unitário (R$)</th>
+          <th>Qtd / Período</th>
+          <th class="cost">Total estimado (R$)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="5" style="background: #e2e8f0; font-weight: 600;">1. Documentação e constituição</td>
+        </tr>
+        <tr>
+          <td>Abertura ME (CNPJ)</td>
+          <td>Taxas + contador (lote único)</td>
+          <td class="cost">1.200</td>
+          <td>1 vez</td>
+          <td class="cost">1.200</td>
+        </tr>
+        <tr>
+          <td>Certificado digital e-CNPJ</td>
+          <td>Válido 1 ano (média)</td>
+          <td class="cost">250</td>
+          <td>1</td>
+          <td class="cost">250</td>
+        </tr>
+        <tr>
+          <td>Contabilidade mensal</td>
+          <td>Honorários contábeis ME</td>
+          <td class="cost">450</td>
+          <td>12 meses</td>
+          <td class="cost">5.400</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="background: #e2e8f0; font-weight: 600;">2. Seguro e compliance</td>
+        </tr>
+        <tr>
+          <td>Seguro carga + RCTR-C</td>
+          <td>Cobertura da operação / valor do frete (ano)</td>
+          <td class="cost">1.800</td>
+          <td>1 ano</td>
+          <td class="cost">1.800</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="background: #e2e8f0; font-weight: 600;">3. Sistemas e tecnologia</td>
+        </tr>
+        <tr>
+          <td>Sistema fiscal (Bsoft / SSW)</td>
+          <td>Assinatura mensal</td>
+          <td class="cost">350</td>
+          <td>12 meses</td>
+          <td class="cost">4.200</td>
+        </tr>
+        <tr>
+          <td>Fretebras (divulgação)</td>
+          <td>Plano básico mensal</td>
+          <td class="cost">80</td>
+          <td>12 meses</td>
+          <td class="cost">960</td>
+        </tr>
+        <tr>
+          <td>Outros (internet, telefone, material)</td>
+          <td>Mensal</td>
+          <td class="cost">200</td>
+          <td>12 meses</td>
+          <td class="cost">2.400</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="background: #e2e8f0; font-weight: 600;">4. Pessoas</td>
+        </tr>
+        <tr>
+          <td>SAC – 1 funcionário</td>
+          <td>Salário + encargos (média)</td>
+          <td class="cost">2.200</td>
+          <td>12 meses</td>
+          <td class="cost">26.400</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="background: #e2e8f0; font-weight: 600;">5. Infraestrutura física (por último)</td>
+        </tr>
+        <tr>
+          <td>Galpão / ponto de apoio</td>
+          <td>Aluguel mensal (pequeno)</td>
+          <td class="cost">2.000</td>
+          <td>12 meses</td>
+          <td class="cost">24.000</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="4">Total estimado primeiro ano (sem frota própria — apenas taxa de frete)</td>
+          <td class="cost">64.610</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">Não incluem: custos de veículos, rastreador nem combustível (responsabilidade dos parceiros). Para mais colaboradores ou galpão maior, ajuste os itens correspondentes.</p>
+  </section>
+
+  <section>
+    <h2>Resumo por etapa (ordem sugerida)</h2>
+    <ol>
+      <li>Constituir ME, abrir conta PJ e contratar contador.</li>
+      <li>Contratar seguro de carga e RCTR-C (valor da operação/frete); exigir documentação e rastreador dos motoristas parceiros.</li>
+      <li>Contratar sistema fiscal (Bsoft ou SSW) para emissão de documentos e cobrança do valor da taxa de frete.</li>
+      <li>Definir galpão/ponto de apoio e cadastrar no Fretebras.</li>
+      <li>Implementar operação (NFS-e, CT-e, MDF-e) e fluxo de faturamento pelo valor total do frete.</li>
+      <li>Estruturar SAC (um funcionário ou terceirizado) e melhorias contínuas.</li>
+    </ol>
+  </section>
+
+  <p class="source-md">Conteúdo baseado no arquivo <strong>Empresa - Logistica.md</strong> desta pasta, expandido com etapas lógicas, itens complementares e estimativa de custos para apoio à decisão.</p>
+
+  <footer>
+    Projeto Empresa de Logística E-Commerce · Edgar Hideki Shiraishi & Vitor Hugo do Nascimento
+  </footer>
+</body>
+</html>
